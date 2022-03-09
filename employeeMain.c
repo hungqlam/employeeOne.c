@@ -60,6 +60,13 @@ if(matchPtr!=NULL)
 }
 else 
     printf("Employee with phone number 909-555-2134 is NOT found in the record\n");
+matchPtr = searchEmployeeByPhone(EmployeeTable,EmployeeTableEntries,"714-565-2134");
+if(matchPtr!=NULL)
+{
+    printf("Employee with phone number 909-555-2134 is in record %d\n",matchPtr - EmployeeTable);
+}
+else 
+    printf("Employee with phone number 909-555-2134 is NOT found in the record\n");
 
 
 return EXIT_SUCCESS ;
